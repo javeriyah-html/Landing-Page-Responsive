@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.wrapper{
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  
+}
+
+
+header {
+    width: 95%;        
+    position: fixed;  
+    top: 0;             
+    left: 0;            
+    z-index: 1000;      
+}
+
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+    padding:0 1em;
+
+}
+
+.header .logo{
+    flex-grow: 2;
+    padding: 2em;
+
+}
+
+.header nav{
+    flex-grow: 5;
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+.header nav a {
+    color: white;
+    justify-content: space-between;
+
+}
+
+.header .logo .white{
+ font-weight: bolder;
+ font-size: x-large;
+}
+
+.header .logo .green{
+    font-weight: bolder;
+ font-size: xx-large;
+ color: green;
+}
+
+nav a:hover{
+    color: green;
+}
+
+.menu{
+    display:none;
+}
+
+
+@media(max-width:600px){
+    .menu{
+        display: inline-block;
+        color: white;
+    }
+
+    .header nav{
+        display: none;
+    }
+}
+
+
+.main{
+    margin-top: 70px; 
+    background-image: url(./imgs/background.jpg) ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h1{
+    font-size: 2em;
+}
+
+p{
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+.image{
+    padding-top: 50px;
+    width: 100%;
+    height: 500px;
+    transition: tranform 1s ease-in-out;
+}
+
+.main, .cotent{
+    min-height: 60%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
+.download{
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid green;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    color: green;
+    font-size: 1em;
+}
+
+.discover{
+    outline: none;
+    border: 1px solid green;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(93, 199, 93);
+    color: white;
+    font-size: 1em;
+}
+
+.content{
+    margin-left: 60px;
+}
+
+.heading{
+  padding-top: 60px;   
+}
+
+
+@media(max-width:950px){
+    .main{
+    align-items: center;
+}
+}
+
+@media(max-width:980px){
+    .discover{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .download{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media(max-width:790px){
+    .content{
+        margin-left: 10px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:680px){
+    .content{
+        margin-left: 20px;
+    }
+
+    .heading{
+        padding-top: 10px;
+    }
+
+    .discover{
+        margin-bottom: 20px;
+    }
+.main{
+    flex-direction: column;
+}
+    
+}
+
+.main2 span{
+    margin-left: 100px;
+}
