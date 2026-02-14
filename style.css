@@ -7,6 +7,23 @@
     text-decoration: none;
 }
 
+.sticky{
+    width: 70px;
+    height: 70px;
+    background-color:rgb(64, 226, 64);
+     border-radius: 40%; 
+    position:fixed;
+    bottom: 20px;
+    right:20px;
+     }
+
+.up{
+    position: relative;
+    top:20px;
+    left:16px;
+    color: white;font-size: 30px;
+}
+
 .wrapper{
   max-width: 1600px;
   height: 100%;
@@ -160,21 +177,21 @@ p{
 @media(max-width:980px){
     .discover{
         margin-top: 10px;
-        width: 100%;
+        width: 80%;
     }
 
     .download{
         margin-top: 10px;
-        width: 100%;
+        width: 80%;
     }
 }
 
-@media(max-width:790px){
+@media(max-width:860px){
     .content{
         margin-left: 10px;
     }
 
-    .main{
+    .main, .second, .third{
         flex-direction: column;
     }
 }
@@ -200,3 +217,70 @@ p{
 .main2 span{
     margin-left: 100px;
 }
+
+
+.second, .third{
+    display: flex;
+    padding-top: 2em;
+}
+
+.new{
+    text-align: center;
+    padding-top: 3em;
+}
+
+.new h1{
+    font-size: 2em;
+}
+
+@media(max-width:310px){
+    .new{
+       font-size: 1em; 
+    }
+}
+
+
+.countdown{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imgs/back1.avif);
+    background-attachment: fixed;
+    padding: 2em;
+   }
+
+.countdown{
+    margin-top: 3em;
+    flex-direction: column;
+}
+
+.count2{
+    padding-top: 2em;
+}
+
+.countdown .load   , .countdown .rated{
+    margin-right:3em;
+}
+
+.countdown i ,.countdown p{
+    font-size: 40px;
+}
+
+.countdown h1{
+    font-size: 80px;
+}
+
+@media(max-width:790px){
+    .count2{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:390px){
+    .countdown{
+        
+    }
+}
+  
